@@ -1,0 +1,120 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #fafafa; /* Light gray background */
+    color: #262626; /* Default text color */
+}
+
+a {
+    text-decoration: none;
+    color: #00376b; /* Link color */
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixed header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    height: 54px;
+}
+
+.nav-divider {
+    color: #dbdbdb;
+    margin: 0 5px;
+}
+
+header .logo-link {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #262626; /* Black color for the logo text */
+}
+
+header .nav-links a {
+    margin-left: 10px; /* Spacing for nav links */
+    font-size: 1em;
+    color: #262626; /* Black color for nav links */
+}
+
+header .nav-links a:first-child {
+    margin-left: 0; /* No margin for the first nav link */
+}
+
+
+header .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 80px auto 20px auto; /* Top margin accounts for fixed header height + padding */
+    padding: 0 10px;
+}
+
+article {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+article .post-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+article .post-header img { /* Avatar */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 1px solid #efefef; /* Light border for avatar */
+}
+
+article .post-header .username {
+    font-weight: 600;
+    color: #262626;
+}
+
+article .post-header .timestamp {
+    margin-left: auto; /* Pushes timestamp to the right */
+    font-size: 0.85em;
+    color: #8e8e8e;
+}
+
+article > img.post-main-image { /* Styles the main image of the post */
+    width: 100%;
+    display: block; /* Removes extra space below if it's inline */
+    border-top: 1px solid #efefef; /* Optional: separator if image touches header */
+    border-bottom: 1px solid #efefef; /* Optional: separator if image touches footer */
+}
+
+article .post-footer {
+    padding: 0 15px 10px 15px;
+}
+
+article .post-footer p {
+    margin: 4px 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+article .post-footer .likes {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+article .post-footer .comment-username {
+    font-weight: 600;
+    color: #262626;
+    margin-right: 5px;
+}
