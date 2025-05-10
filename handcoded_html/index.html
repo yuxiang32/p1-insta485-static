@@ -4,19 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>insta485</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><a href="/">Insta485</a></header>
-    <div><a href="/explore/">explore</a></div>
-    <div><a href="/users/awdeorio/">awdeorio</a></div>
+    <header>
+        <a href="/" class="logo-link">Insta485</a>
+        <span class="nav-links">
+            <a href="/explore/">explore</a> &nbsp;|&nbsp;
+            <a href="/users/awdeorio/">awdeorio</a>
+        </span>
+    </header>
     <main>
+        <!-- First post -->
         <article>
-            <a href="/users/awdeorio/"><img src="uploads/e1a7c5c32973862ee15173b0259e3efdb6a391af.jpg" alt="awdeorio avatar"></a>
-            <a href="/users/awdeorio/">awdeorio</a>
-            <a href="/posts/3/">timestamp</a>
-            <img src="/Users/zhengyuxiang/p1-insta485-static/handcoded_html/uploads/9887e06812ef434d291e4936417d125cd594b38a.jpg" alt="post image">
-            <p>1 like</p>
-            <a href="/users/awdeorio/">awdeorio</a>
+            <div class="post-header">
+                <a href="/users/awdeorio/"><img src="uploads/e1a7c5c32973862ee15173b0259e3efdb6a391af.jpg" alt="awdeorio avatar"></a>
+                <a href="/users/awdeorio/" class="username">awdeorio</a>
+                <a href="/posts/3/" class="timestamp">10 minutes ago</a>
+            </div>
+            <img src="/Users/zhengyuxiang/p1-insta485-static/handcoded_html/uploads/9887e06812ef434d291e4936417d125cd594b38a.jpg" alt="post image" class="post-main-image">
+            <div class="post-footer">
+                <p class="likes">1 like</p>
+                <p><a href="/users/awdeorio/" class="comment-username">awdeorio</a> #chickensofinstagram</p>
+                <p><a href="/users/jflinn/" class="comment-username">jflinn</a> I &lt;3 chickens</p>
+                <p><a href="/users/michjc/" class="comment-username">michjc</a> Cute overload!</p>
+            </div>
+        </article>
+
+        <!-- Second post (post 2) -->
+        <article>
+            <div class="post-header">
+                <a href="/users/jflinn/"><img src="uploads/505083b8b56c97429a728b68f31b0b2a089e5113.jpg" alt="jflinn avatar"></a>
+                <a href="/users/jflinn/" class="username">jflinn</a>
+                <a href="/posts/2/" class="timestamp">4 hours ago</a>
+            </div>
+            <img src="uploads/ad7790405c539894d25ab8dcf0b79eed3341e109.jpg" alt="post image" class="post-main-image">
+            <div class="post-footer">
+                <p class="likes">2 likes</p>
+                <p><a href="/users/awdeorio/" class="comment-username">awdeorio</a> Sick #crossword</p>
+            </div>
+        </article>
+
+        <!-- Third post (post 1) -->
+        <article>
+            <div class="post-header">
+                <a href="/users/awdeorio/"><img src="uploads/e1a7c5c32973862ee15173b0259e3efdb6a391af.jpg" alt="awdeorio avatar"></a>
+                <a href="/users/awdeorio/" class="username">awdeorio</a>
+                <a href="/posts/1/" class="timestamp">a day ago</a>
+            </div>
+            <img src="uploads/122a7d27ca1d7420a1072f695d9290fad4501a41.jpg" alt="post image" class="post-main-image">
+            <div class="post-footer">
+                <p class="likes">3 likes</p>
+                <p><a href="/users/jflinn/" class="comment-username">jflinn</a> Walking the plank #chickensofinstagram</p>
+                <p><a href="/users/awdeorio/" class="comment-username">awdeorio</a> This was after trying to teach them to do a #crossword</p>
+            </div>
         </article>
     </main>
 </body>
