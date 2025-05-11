@@ -1,6 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
+    padding: 20px;
     background-color: #fafafa; /* Light gray background */
     color: #262626; /* Default text color */
 }
@@ -117,4 +118,59 @@ article .post-footer .comment-username {
     font-weight: 600;
     color: #262626;
     margin-right: 5px;
+}
+
+
+/* User profile styles */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.profile-username {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.profile-stats {
+    margin: 10px 0;
+}
+
+.profile-name {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.profile-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-posts img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hide section headers that aren't needed in the design */
+.profile-posts-header {
+    display: none;
+}
+
+/* Horizontal line styling */
+hr {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    margin: 0;
+}
+
+/* Logo styling for Instagram text */
+.instagram-logo {
+    font-family: 'Billabong', cursive, sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
 }
